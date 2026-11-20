@@ -15,12 +15,12 @@ class Program
 {
     static void Main()
     {
-        /* #region Q01 - Store Book in object and print
+         #region Q01 - Store Book in object and print
          Book myBook = new Book { Title = "C# Programming", Pages = 464 };
          object obj = myBook;
          Console.WriteLine(obj);
-         #endregion*/
-        #region Q2
+         #endregion
+         #region Q2
         /* Q02Using the Book class above, print the result of calling ToString(), Equals() (compare book with
         itself), GetHashCode(), and GetType() on book.*/
 
@@ -30,6 +30,11 @@ class Program
         Console.WriteLine(book.Equals(book));
         Console.WriteLine(book.GetHashCode());
         Console.WriteLine(book.GetType());
+        #endregion
+         #region Q03 - Type mismatch error & fix
+        // Original (compile-time error): int pages = "464";
+        int pages = int.Parse("464");
+        Console.WriteLine(pages);
         #endregion
 
     }
