@@ -101,9 +101,14 @@ class Program
          Console.WriteLine(a < b && b > 15); // True*/
         #endregion
         #region Q13 - Ternary operator (?:)
-        int score = 75;
+        /*int score = 75;
         string result = score >= 50 ? "Pass" : "Fail";
-        Console.WriteLine(result); // Pass
+        Console.WriteLine(result); // Pass*/
+        #endregion
+        #region Q14 - Even or Odd using modulo (%)
+        int num = 7;
+        string parity = (num % 2 == 0) ? "Even" : "Odd";
+        Console.WriteLine(parity); // Odd
         #endregion
     }
 }
