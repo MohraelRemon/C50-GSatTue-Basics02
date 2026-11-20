@@ -36,6 +36,21 @@ class Program
         int pages = int.Parse("464");
         Console.WriteLine(pages);
         #endregion
+        #region Q04 - Try, catch, and finally
+        try
+        {
+            int zero = 0;
+            int result = 10 / zero;
+        }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("Cannot divide by zero");
+        }
+        finally
+        {
+            Console.WriteLine("Done");
+        }
+        #endregion
 
     }
 }
