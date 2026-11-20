@@ -78,9 +78,17 @@ class Program
         }*/
         #endregion
         #region Q09 - Convert int to string and check type
-        int pagesValue = 464;
+        /*int pagesValue = 464;
         string pagesAsString = pagesValue.ToString();
-        Console.WriteLine(pagesAsString.GetType()); // System.String
+        Console.WriteLine(pagesAsString.GetType()); // System.String*/
+        #endregion
+        #region Q10 - Boxing and Unboxing
+        int copies = 100;
+        object boxedCopies = copies;       // Boxing (value type -> object on heap)
+        int unboxedCopies = (int)boxedCopies; // Unboxing (object -> value type)
+
+        Console.WriteLine(boxedCopies);
+        Console.WriteLine(unboxedCopies);
         #endregion
     }
 }
