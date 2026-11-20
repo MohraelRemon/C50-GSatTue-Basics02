@@ -15,12 +15,12 @@ class Program
 {
     static void Main()
     {
-         #region Q01 - Store Book in object and print
+        #region Q01 - Store Book in object and print
         /// Book myBook = new Book { Title = "C# Programming", Pages = 464 };
         /// object obj = myBook;
-       ///  Console.WriteLine(obj);
-         #endregion
-         #region Q2
+        ///  Console.WriteLine(obj);
+        #endregion
+        #region Q2
         /* Q02Using the Book class above, print the result of calling ToString(), Equals() (compare book with
         itself), GetHashCode(), and GetType() on book.*/
 
@@ -31,12 +31,12 @@ class Program
         Console.WriteLine(book.GetHashCode());
         Console.WriteLine(book.GetType());*/
         #endregion
-         #region Q03 - Type mismatch error & fix
+        #region Q03 - Type mismatch error & fix
         // Original (compile-time error): int pages = "464";
         /*int pages = int.Parse("464");
         Console.WriteLine(pages);*/
         #endregion
-         #region Q04 - Try, catch, and finally
+        #region Q04 - Try, catch, and finally
         /*try
         {
             int zero = 0;
@@ -52,9 +52,9 @@ class Program
         }*/
         #endregion
         #region Q05 - Implicit conversion from int to double
-       /* int Pages = 300;
-        double doublePages = pages;
-        Console.WriteLine(doublePages);*/
+        /* int Pages = 300;
+         double doublePages = pages;
+         Console.WriteLine(doublePages);*/
         #endregion
         #region Q06 - Explicit cast from double to int
         /*double price = 49.99;
@@ -62,9 +62,20 @@ class Program
         Console.WriteLine(intPrice);*/
         #endregion
         #region Q07 - Convert string to int using Convert class
-        string pagesText = "464";
+        /*string pagesText = "464";
         int pages = Convert.ToInt32(pagesText);
-        Console.WriteLine(Pages);
+        Console.WriteLine(Pages);*/
+        #endregion
+        #region Q08 - int.Parse() and int.TryParse()
+        string yearText = "2023";
+        int year = int.Parse(yearText);
+        Console.WriteLine(year);
+
+        string badText = "abc";
+        if (!int.TryParse(badText, out int parsedNumber))
+        {
+            Console.WriteLine("Invalid number");
+        }
         #endregion
     }
 }
