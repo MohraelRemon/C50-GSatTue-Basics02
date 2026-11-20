@@ -56,6 +56,11 @@ class Program
         double doublePages = pages;
         Console.WriteLine(doublePages);
         #endregion
+        #region Q06 - Explicit cast from double to int
+        double price = 49.99;
+        int intPrice = (int)price;
+        Console.WriteLine(intPrice);
+        #endregion
 
     }
 }
