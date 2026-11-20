@@ -83,12 +83,17 @@ class Program
         Console.WriteLine(pagesAsString.GetType()); // System.String*/
         #endregion
         #region Q10 - Boxing and Unboxing
-        int copies = 100;
+        /*int copies = 100;
         object boxedCopies = copies;       // Boxing (value type -> object on heap)
         int unboxedCopies = (int)boxedCopies; // Unboxing (object -> value type)
 
         Console.WriteLine(boxedCopies);
-        Console.WriteLine(unboxedCopies);
+        Console.WriteLine(unboxedCopies);*/
+        #endregion
+        #region Q11 - Compound assignment operator (+=)
+        int x = 5;
+        x += 3; // Equivalent to: x = x + 3;
+        Console.WriteLine(x); // 8
         #endregion
     }
 }
