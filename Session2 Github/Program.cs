@@ -110,6 +110,11 @@ class Program
         string parity = (num % 2 == 0) ? "Even" : "Odd";
         Console.WriteLine(parity); // Odd
         #endregion
+        #region Q15 - Null-coalescing operator (??)
+        string? title = null;
+        Console.WriteLine(title ?? "Untitled"); // Untitled
+        #endregion
+
     }
 }
 #endregion
