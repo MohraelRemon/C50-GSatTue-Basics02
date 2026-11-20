@@ -67,7 +67,7 @@ class Program
         Console.WriteLine(Pages);*/
         #endregion
         #region Q08 - int.Parse() and int.TryParse()
-        string yearText = "2023";
+        /*string yearText = "2023";
         int year = int.Parse(yearText);
         Console.WriteLine(year);
 
@@ -75,7 +75,12 @@ class Program
         if (!int.TryParse(badText, out int parsedNumber))
         {
             Console.WriteLine("Invalid number");
-        }
+        }*/
+        #endregion
+        #region Q09 - Convert int to string and check type
+        int pagesValue = 464;
+        string pagesAsString = pagesValue.ToString();
+        Console.WriteLine(pagesAsString.GetType()); // System.String
         #endregion
     }
 }
