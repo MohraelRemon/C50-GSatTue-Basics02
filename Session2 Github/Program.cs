@@ -36,7 +36,7 @@ class Program
         int pages = int.Parse("464");
         Console.WriteLine(pages);
         #endregion
-        #region Q04 - Try, catch, and finally
+         #region Q04 - Try, catch, and finally
         try
         {
             int zero = 0;
@@ -50,6 +50,11 @@ class Program
         {
             Console.WriteLine("Done");
         }
+        #endregion
+        #region Q05 - Implicit conversion from int to double
+        int Pages = 300;
+        double doublePages = pages;
+        Console.WriteLine(doublePages);
         #endregion
 
     }
