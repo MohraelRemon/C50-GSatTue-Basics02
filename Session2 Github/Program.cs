@@ -91,9 +91,14 @@ class Program
         Console.WriteLine(unboxedCopies);*/
         #endregion
         #region Q11 - Compound assignment operator (+=)
-        int x = 5;
-        x += 3; // Equivalent to: x = x + 3;
-        Console.WriteLine(x); // 8
+        /* int x = 5;
+         x += 3; // Equivalent to: x = x + 3;
+         Console.WriteLine(x); // 8*/
+        #endregion
+        #region Q12 - Logical AND operator (&&)
+        int a = 10;
+        int b = 20;
+        Console.WriteLine(a < b && b > 15); // True
         #endregion
     }
 }
