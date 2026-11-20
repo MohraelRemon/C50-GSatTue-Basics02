@@ -96,9 +96,14 @@ class Program
          Console.WriteLine(x); // 8*/
         #endregion
         #region Q12 - Logical AND operator (&&)
-        int a = 10;
-        int b = 20;
-        Console.WriteLine(a < b && b > 15); // True
+        /* int a = 10;
+         int b = 20;
+         Console.WriteLine(a < b && b > 15); // True*/
+        #endregion
+        #region Q13 - Ternary operator (?:)
+        int score = 75;
+        string result = score >= 50 ? "Pass" : "Fail";
+        Console.WriteLine(result); // Pass
         #endregion
     }
 }
